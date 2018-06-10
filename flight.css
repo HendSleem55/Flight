@@ -1,0 +1,396 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 75%;
+	margin:0 auto;
+
+}
+
+.pad{
+	padding: 50px 0;
+}
+
+button , footer a {
+	background-color:#FFE165;
+	color: #121212;
+	border: none;
+	border-radius: 3px 3px 0 0;
+	padding: 18px 30px;
+
+}
+
+
+.primarycolor{
+	color: white
+}
+
+/*****************************************************header*******************************************************/
+header{
+	background-image: url('img/banner-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 93vh;
+	display: flex;
+	align-items:center;
+	position: relative;
+	color: white
+}
+
+/*** overlay part ***/
+
+.cover{
+	width :45vw;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+
+
+.cover img {
+	padding: 10% 0 0 27.7%;
+}
+
+
+.cover button {
+	position: absolute;
+	bottom: 0 ;
+	left: 27.7%;
+	font-size: 20px
+}
+
+.cover i {
+	padding-right: 5px
+}
+
+/*** the follow us part ***/
+
+
+header .headerContent{
+	height: 55%;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	z-index: 1
+}
+header .contact{
+	display: grid;
+	align-items:end ;
+}
+
+header .follow {
+	width: 400px;
+	display: grid;
+	grid-gap:10px;
+	grid-template-rows:1fr 1fr 1fr;
+}
+
+header .follow section {
+	background-color: rgba(255,255,255,.2);
+	width: 100%;
+
+}
+
+header .follow section p{
+	margin: 0;
+	display: inline-block;
+	line-height: 60px;
+	padding-left: 20px
+}
+
+.x {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	align-items:center;
+}
+
+.follow i {
+	background-color: rgba(255,255,255,0.3);
+	padding: 20px 20px;
+	font-size: 20px;
+	float: right;
+	width: 20px;
+	text-align: center;
+}
+
+/**** left part ****/ 
+
+.check .checkInfo {
+	color: black;
+	box-sizing :border-box;
+	width: 80%;
+	height: 100%;
+    padding:20px 50px;
+	background-color: rgba(253, 252, 251,.95)
+}
+
+.check h2 {
+	margin: 0 ; 
+	border-bottom: 1px solid lightgray;
+	padding-bottom:15px
+}
+
+
+.check .options{
+	display: grid;
+	grid-template-columns:1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-gap:30px;
+
+
+}
+
+.options p {
+	margin: 0
+}
+
+.options select {
+		width: 100%
+}
+
+.options select , .options input{
+	background-color: #E7E7E7;
+	padding: 10px 5px;
+	border: none ;
+}
+
+
+.options button {
+	padding-top :10px;
+	padding-bottom: 10px
+}
+
+/***************************************/
+
+
+.check-weather h2 {
+	text-align: center;
+}
+.weathers{
+	background-image: url('img/weather-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 40px auto;
+}
+.days{
+	width: 100%;
+	background-color: rgba(80,80,80,.8);
+	font-size: 0;
+
+}
+.check-weather .days h3{
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	margin: 0;
+	font-size: 20px;
+	padding: 30px 0;
+
+}
+
+.check-weather .days h3:first-of-type{
+		background-color: #FFE165;
+
+}
+
+.check-weather .days h3:hover , .suport section:hover{
+	
+	background-color: #FFE165;
+
+}
+
+.country , .suport{
+	display: grid;
+	grid-gap:30px;
+	grid-template-columns:1fr 1fr 1fr;
+	padding:80px 35px;
+	box-sizing:border-box;
+}
+
+
+.country .content ,  .suport section{
+	padding: 30px ;
+	text-align: center;
+}
+
+.country .content{
+	background-color: rgba(255,255,255,0.3);
+
+}
+.country h2 {
+	margin: 0;
+}
+
+.country img {
+	margin: 30px
+}
+
+
+.calender {
+	padding:20px;
+	background-color: rgba(255,255,255,.7);
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr;
+	grid-gap:20px;
+	margin-top: 30px;
+	color: black
+}
+
+
+.calender .dgree{
+	background-color:#CDCFD1;
+	padding: 5px
+}
+
+.suport {
+	padding-left: 0;
+	padding-right: 0;
+}
+.suport section {
+	background-color: #1f3646;
+	color: #f7f7f7
+}
+
+.suport img {
+	margin:30px;
+}
+
+/*********************Media**************************/
+
+.media{
+	background-color: #f4f4f4;
+	width: 100%;
+	color: #f7f7f7;
+	
+}
+
+.media .content {
+	display: grid;
+	grid-template-columns:3fr 7fr;
+	grid-gap:30px;
+}
+
+aside{
+	display: flex;
+	flex-direction:column ;
+	justify-content:space-between;
+	height: 400px;
+}
+
+aside section {
+	position: relative;
+	background-color: #1F3646;
+	height: 60px;
+}
+
+aside section:first-of-type{
+	background-color:#FFE165 ;
+	color: #000;
+}
+
+aside section p {
+	margin: 0;
+	line-height: 60px;
+	padding-left: 20px
+}	
+
+
+aside figure {
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing:border-box;
+	background-color: rgba(255,255,255,.5);
+	margin: 0;
+	text-align: center;
+	height: 60px;
+	width: 65px;
+	padding-top: 15px
+}
+
+aside figure img {
+	height: 27px ;
+	width: 25px ;
+
+}
+
+/**********vedio*********/
+.vedio {
+	width: 100%;
+	height: 100%
+}
+.vedio .youtube{
+	width: 100%;
+	height: 100%;
+}
+
+/******************************visited*************************************/
+/*
+.Visited{
+	background-color:green ;
+}
+.Visited h2 {
+	text-align: center;
+}
+
+.autoplaying
+{	width:100%;
+	margin:auto;
+	display: grid;
+	grid-gap:10px;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+.autoplaying div { 
+	background-color: lightgray ;
+	text-align: center;
+	padding: 10px;
+	box-sizing:border-box;
+	width: 50%
+}
+
+
+.autoplaying img {
+}
+*/
+
+
+/*****************************footer***********************************/
+
+
+footer {
+	display: flex;
+	align-items:center;
+	width: 100%;
+	background-color: #1F3646;
+	color: white
+
+}
+
+footer .content {
+	text-align: center;
+	width: 100%
+}
+
+
+footer a{
+	text-decoration: none;
+	padding: 10px 30px; 
+}
+
+footer i { 
+	color: white ;
+	padding: 30px;
+	background-color: rgba(255,255,255,.5);
+	margin: 50px 0
+	}
+
+
+footer span {
+	color: #FFE165
+}
